@@ -1,10 +1,10 @@
-# Credit Card Approval Prediction using Machine Learning
+# 💳 Credit Card Approval Prediction using Machine Learning
 
 ## 📌 Project Overview
 
-This project predicts whether a credit card application will be approved or rejected using Machine Learning algorithms. The system analyzes applicant information such as income, age, family members, employment years, and other financial details to make predictions.
+This project predicts whether a credit card application will be **approved** or **rejected** using Machine Learning algorithms. The system analyzes applicant information such as income, age, family members, employment years, and other financial details to make predictions.
 
-The best-performing model is integrated into a Flask web application, allowing users to enter applicant details and receive an instant prediction.
+The best-performing model is integrated into a **Flask web application**, allowing users to enter applicant details and receive an instant prediction.
 
 ---
 
@@ -13,6 +13,8 @@ The best-performing model is integrated into a Flask web application, allowing u
 ### 🏠 Home Page
 
 ![Home Page](images/home.png)
+
+---
 
 ### ✅ Prediction Result
 
@@ -87,62 +89,71 @@ Credit-Card-Approval-Prediction
 
 ## 🤖 Machine Learning Models
 
-The following models were trained and evaluated:
+The following Machine Learning algorithms were trained and evaluated:
 
 - Logistic Regression
 - Decision Tree
 - Random Forest
 - XGBoost
 
-The best-performing model was saved and integrated into the Flask application.
+The best-performing model was saved and integrated into the Flask web application for prediction.
 
 ---
 
 ## ▶️ How to Run
 
-1. Clone this repository.
-2. Install the required libraries:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sowmyaperike/Credit-Card-Approval-Prediction.git
+```
+
+### 2. Install the required libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the Flask application:
+### 3. Run the Flask application
 
 ```bash
 python app.py
 ```
 
-4. Open your browser and visit:
+### 4. Open your browser
 
-```
+Visit:
+
+```text
 http://127.0.0.1:5000
 ```
 
-5. Enter applicant details and click **Predict**.
+### 5. Predict
+
+Enter the applicant details and click **Predict** to view the credit card approval result.
 
 ---
 
 ## 📈 Future Improvements
 
-- Cloud Deployment
-- Improved User Interface
-- Real-time Prediction API
-- Better Feature Engineering
-- Model Optimization
+- Deploy the application to the cloud
+- Improve the user interface
+- Develop a REST API for predictions
+- Add more features for better accuracy
+- Optimize the Machine Learning model
 
 ---
 
 ## 👥 Team
 
-- Sowmya Perike (Team Lead)
-- Pravallika Sri Modugumudi
-- R N V Sai Ramya
-- Manga Doddi Chaitanya
-- Kraanthi Kunasani
+- **Sowmya Perike** *(Team Lead)*
+- **Pravallika Sri Modugumudi**
+- **R N V Sai Ramya**
+- **Manga Doddi Chaitanya**
+- **Kraanthi Kunasani**
 
 ---
 
 ## 📜 License
 
-This project is developed for educational purposes as part of the SkillWallet Artificial Intelligence and Machine Learning Program.
+This project was developed for educational purposes as part of the **SkillWallet Artificial Intelligence and Machine Learning Program**.
