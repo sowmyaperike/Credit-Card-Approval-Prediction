@@ -59,17 +59,9 @@ The best-performing model is integrated into a **Flask web application**, allowi
 ```text
 Credit-Card-Approval-Prediction
 │
-├── dataset
-│   ├── application_record.csv
-│   └── credit_record.csv
-│
 ├── images
 │   ├── home.png
 │   └── prediction.png
-│
-├── models
-│   ├── credit_card_model.pkl
-│   └── feature_columns.pkl
 │
 ├── static
 │   └── style.css
@@ -79,6 +71,8 @@ Credit-Card-Approval-Prediction
 │
 ├── Credit_Card_Approval.ipynb
 ├── app.py
+├── credit_record.csv
+├── feature_columns.pkl
 ├── README.md
 └── requirements.txt
 ```
