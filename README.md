@@ -71,15 +71,13 @@ Credit-Card-Approval-Prediction
 │   ├── credit_card_model.pkl
 │   └── feature_columns.pkl
 │
-├── notebooks
-│   └── Credit_Card_Approval.ipynb
-│
 ├── static
 │   └── style.css
 │
 ├── templates
 │   └── index.html
 │
+├── Credit_Card_Approval.ipynb
 ├── app.py
 ├── README.md
 └── requirements.txt
