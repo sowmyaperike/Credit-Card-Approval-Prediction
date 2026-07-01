@@ -8,6 +8,18 @@ The best-performing model is integrated into a Flask web application, allowing u
 
 ---
 
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+
+![Home Page](images/home.png)
+
+### ✅ Prediction Result
+
+![Prediction Result](images/prediction.png)
+
+---
+
 ## 🚀 Features
 
 - Data Collection and Analysis
@@ -42,12 +54,16 @@ The best-performing model is integrated into a Flask web application, allowing u
 
 ## 📂 Project Structure
 
-```
+```text
 Credit-Card-Approval-Prediction
 │
 ├── dataset
 │   ├── application_record.csv
 │   └── credit_record.csv
+│
+├── images
+│   ├── home.png
+│   └── prediction.png
 │
 ├── models
 │   ├── credit_card_model.pkl
@@ -64,6 +80,7 @@ Credit-Card-Approval-Prediction
 │
 ├── app.py
 ├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -84,26 +101,25 @@ The best-performing model was saved and integrated into the Flask application.
 ## ▶️ How to Run
 
 1. Clone this repository.
-2. Install the required libraries.
-3. Run:
+2. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the Flask application:
 
 ```bash
 python app.py
 ```
 
-4. Open:
+4. Open your browser and visit:
 
 ```
 http://127.0.0.1:5000
 ```
 
 5. Enter applicant details and click **Predict**.
-
----
-
-## 📷 Application Preview
-
-(Add screenshots here before final submission.)
 
 ---
 
@@ -124,7 +140,6 @@ http://127.0.0.1:5000
 - R N V Sai Ramya
 - Manga Doddi Chaitanya
 - Kraanthi Kunasani
-
 
 ---
 
