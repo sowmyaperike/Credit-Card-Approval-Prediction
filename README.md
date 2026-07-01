@@ -69,6 +69,7 @@ Credit-Card-Approval-Prediction
 ├── templates
 │   └── index.html
 │
+├── .gitignore
 ├── Credit_Card_Approval.ipynb
 ├── app.py
 ├── credit_record.csv
@@ -76,6 +77,8 @@ Credit-Card-Approval-Prediction
 ├── README.md
 └── requirements.txt
 ```
+
+> **Note:** The original training dataset `application_record.csv` is not included in this repository because it exceeds GitHub's web upload size limit (25 MB). The model was trained using both `application_record.csv` and `credit_record.csv`.
 
 ---
 
