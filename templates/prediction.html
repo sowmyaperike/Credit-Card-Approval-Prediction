@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Credit Card Approval Prediction</h1>
+
+    <form action="/predict" method="POST" class="prediction-form">
+
+        <div class="form-group">
+            <label>Gender</label>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Own Car</label>
+            <select name="own_car" required>
+                <option value="">Select</option>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Own Realty</label>
+            <select name="own_realty" required>
+                <option value="">Select</option>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Annual Income</label>
+            <input type="number" name="income" placeholder="Enter Annual Income" required>
+        </div>
+
+        <div class="form-group">
+            <label>Income Type</label>
+            <select name="income_type" required>
+                <option value="">Select</option>
+                <option value="Working">Working</option>
+                <option value="Pensioner">Pensioner</option>
+                <option value="Student">Student</option>
+                <option value="State servant">State servant</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Education</label>
+            <select name="education" required>
+                <option value="">Select</option>
+                <option value="Higher education">Higher education</option>
+                <option value="Incomplete higher">Incomplete higher</option>
+                <option value="Lower secondary">Lower secondary</option>
+                <option value="Secondary / secondary special">Secondary / secondary special</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Family Status</label>
+            <select name="family_status" required>
+                <option value="">Select</option>
+                <option value="Married">Married</option>
+                <option value="Separated">Separated</option>
+                <option value="Single / not married">Single / not married</option>
+                <option value="Widow">Widow</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Housing Type</label>
+            <select name="housing_type" required>
+                <option value="">Select</option>
+                <option value="House / apartment">House / apartment</option>
+                <option value="Municipal apartment">Municipal apartment</option>
+                <option value="Office apartment">Office apartment</option>
+                <option value="Rented apartment">Rented apartment</option>
+                <option value="With parents">With parents</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Occupation</label>
+            <select name="occupation" required>
+                <option value="Unknown">Unknown</option>
+                <option value="Cleaning staff">Cleaning staff</option>
+                <option value="Cooking staff">Cooking staff</option>
+                <option value="Core staff">Core staff</option>
+                <option value="Drivers">Drivers</option>
+                <option value="HR staff">HR staff</option>
+                <option value="High skill tech staff">High skill tech staff</option>
+                <option value="IT staff">IT staff</option>
+                <option value="Laborers">Laborers</option>
+                <option value="Low-skill Laborers">Low-skill Laborers</option>
+                <option value="Managers">Managers</option>
+                <option value="Medicine staff">Medicine staff</option>
+                <option value="Private service staff">Private service staff</option>
+                <option value="Realty agents">Realty agents</option>
+                <option value="Sales staff">Sales staff</option>
+                <option value="Secretaries">Secretaries</option>
+                <option value="Security staff">Security staff</option>
+                <option value="Waiters/barmen staff">Waiters/barmen staff</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Number of Children</label>
+            <input type="number" name="children" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label>Family Members</label>
+            <input type="number" name="family_members" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" name="age" min="18" max="100" required>
+        </div>
+
+        <div class="form-group">
+            <label>Years Employed</label>
+            <input type="number" name="years_employed" min="0" max="50" required>
+        </div>
+
+        <div class="full-width">
+            <button type="submit">Predict</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
