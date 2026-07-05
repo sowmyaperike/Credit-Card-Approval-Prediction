@@ -1,14 +1,39 @@
 # 💳 Credit Card Approval Prediction using Machine Learning
 
-## 📌 Project Overview
+A Machine Learning-based web application that predicts whether a credit card application is likely to be **Approved** or **Rejected** based on an applicant's financial and demographic information.
 
-This project predicts whether a credit card application will be **approved** or **rejected** using Machine Learning algorithms. The system analyzes applicant information such as income, age, family members, employment years, and other financial details to make predictions.
-
-The best-performing model is integrated into a **Flask web application**, allowing users to enter applicant details and receive an instant prediction.
+Built using **Python, Flask, Scikit-learn, XGBoost, HTML, and CSS**.
 
 ---
 
-## 📸 Application Screenshots
+## 📖 Project Overview
+
+Banks receive thousands of credit card applications every day. Reviewing each application manually is time-consuming and prone to human error.
+
+This project automates the credit card approval process using Machine Learning. The model analyzes applicant information such as income, employment details, family status, education, housing, and credit history to predict whether a credit card application should be approved.
+
+The trained model is integrated with a Flask web application that provides an easy-to-use interface for real-time predictions.
+
+---
+
+## ✨ Features
+
+- 📊 Data preprocessing and cleaning
+- 📈 Exploratory Data Analysis (EDA)
+- 🔧 Feature Engineering
+- 🤖 Multiple Machine Learning models
+  - Logistic Regression
+  - Decision Tree
+  - Random Forest
+  - XGBoost
+- 🏆 Best model selection based on performance
+- 🌐 Flask Web Application
+- 🎨 Responsive HTML & CSS interface
+- ⚡ Instant credit card approval prediction
+
+---
+
+## 🖼️ Application Screenshots
 
 ### 🏠 Home Page
 
@@ -16,41 +41,43 @@ The best-performing model is integrated into a **Flask web application**, allowi
 
 ---
 
-### ✅ Prediction Result
+### 📋 Prediction Page
 
-![Prediction Result](images/prediction.png)
-
----
-
-## 🚀 Features
-
-- Data Collection and Analysis
-- Data Preprocessing
-- Feature Engineering
-- Multiple Machine Learning Models
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- XGBoost
-- Model Comparison
-- Flask Web Application
-- User-friendly HTML & CSS Interface
-- Instant Credit Card Approval Prediction
+![Prediction Page](images/prediction.png)
 
 ---
 
 ## 🛠️ Technologies Used
 
+### Programming Language
 - Python
-- Pandas
-- NumPy
+
+### Machine Learning
 - Scikit-learn
 - XGBoost
+
+### Data Analysis
+- Pandas
+- NumPy
+
+### Visualization
+- Matplotlib
+- Seaborn
+
+### Web Framework
 - Flask
+
+### Frontend
 - HTML
 - CSS
+
+### Model Serialization
+- Pickle
 - Joblib
+
+### Development Tools
 - Jupyter Notebook
+- VS Code
 
 ---
 
@@ -59,96 +86,134 @@ The best-performing model is integrated into a **Flask web application**, allowi
 ```text
 Credit-Card-Approval-Prediction
 │
-├── images
+├── dataset/
+│   └── credit_record.csv
+│
+├── images/
 │   ├── home.png
 │   └── prediction.png
 │
-├── static
+├── models/
+│   └── feature_columns.pkl
+│
+├── notebooks/
+│   └── Credit_Card_Approval.ipynb
+│
+├── static/
 │   └── style.css
 │
-├── templates
-│   └── index.html
+├── templates/
+│   ├── home.html
+│   ├── index.html
+│   ├── prediction.html
+│   └── result.html
 │
-├── .gitignore
-├── Credit_Card_Approval.ipynb
 ├── app.py
-├── credit_record.csv
-├── feature_columns.pkl
+├── requirements.txt
 ├── README.md
-└── requirements.txt
+└── .gitignore
 ```
-
-> **Note:** The original training dataset `application_record.csv` is not included in this repository because it exceeds GitHub's web upload size limit (25 MB). The model was trained using both `application_record.csv` and `credit_record.csv`.
 
 ---
 
 ## 🤖 Machine Learning Models
 
-The following Machine Learning algorithms were trained and evaluated:
+The following supervised learning algorithms were trained and evaluated:
 
 - Logistic Regression
-- Decision Tree
-- Random Forest
-- XGBoost
+- Decision Tree Classifier
+- Random Forest Classifier
+- XGBoost Classifier
 
-The best-performing model was saved and integrated into the Flask web application for prediction.
+After comparing model performance, the best-performing model was selected and integrated into the Flask application.
 
 ---
 
-## ▶️ How to Run
+## ⚙️ Installation
 
-### 1. Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/sowmyaperike/Credit-Card-Approval-Prediction.git
 ```
 
-### 2. Install the required libraries
+### 2️⃣ Navigate to the Project
+
+```bash
+cd Credit-Card-Approval-Prediction
+```
+
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Flask application
+### 4️⃣ Run the Application
 
 ```bash
 python app.py
 ```
 
-### 4. Open your browser
+### 5️⃣ Open in Browser
 
-Visit:
-
-```text
+```
 http://127.0.0.1:5000
 ```
 
-### 5. Predict
+---
 
-Enter the applicant details and click **Predict** to view the credit card approval result.
+## 📊 Dataset
+
+The project is based on the Credit Card Approval dataset containing applicant information and historical credit records.
+
+**Dataset Files**
+
+- application_record.csv
+- credit_record.csv
+
+> **Note:** The original `application_record.csv` dataset and the trained model file are not included in this repository because they exceed GitHub's file size limit. They were used during model training and testing.
 
 ---
 
 ## 📈 Future Improvements
 
-- Deploy the application to the cloud
-- Improve the user interface
-- Develop a REST API for predictions
-- Add more features for better accuracy
-- Optimize the Machine Learning model
+- ☁️ Deploy the application to the cloud
+- 🤖 Improve model accuracy
+- 📱 Make the interface fully responsive
+- 🔐 Add user authentication
+- 📊 Add model performance dashboard
+- 🌍 Deploy using Render or Railway
+- 🔗 Create REST API endpoints
 
 ---
 
-## 👥 Team
+## 👥 Team Members
 
-- **Sowmya Perike** *(Team Lead)*
-- **Pravallika Sri Modugumudi**
-- **R N V Sai Ramya**
-- **Manga Doddi Chaitanya**
-- **Kraanthi Kunasani**
+| Name | Role |
+|------|------|
+| **Sowmya Perike** | Team Lead |
+| **Pravallika Sri Modugumudi** | Team Member |
+| **R N V Sai Ramya Tadepalli** | Team Member |
+| **Manga Doddi Chaitanya** | Team Member |
+| **Kraanthi Kunasani** | Team Member |
 
 ---
 
-## 📜 License
+## 🙏 Acknowledgements
 
-This project was developed for educational purposes as part of the **SkillWallet Artificial Intelligence and Machine Learning Program**.
+This project was developed as part of the **SkillWallet Artificial Intelligence and Machine Learning Program**.
+
+Special thanks to the mentors and contributors who supported the successful completion of this project.
+
+---
+
+## 📄 License
+
+This project is intended for **educational and learning purposes**.
+
+---
+
+## ⭐ If you like this project
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
